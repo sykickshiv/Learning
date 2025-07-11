@@ -6,17 +6,17 @@ using UnityEngine;
 public class FirstPersonController : MonoBehaviour
 {
     [Header("Movement Settings")]
-    public float walkSpeed = 3.0f;
-    public float sprintSpeed = 6.0f;
+    [SerializeField] float walkSpeed = 3.0f;
+    [SerializeField] float sprintSpeed = 6.0f;
 
     [Header("Mouse Look Settings")]
-    public float mouseSensitivity = 2.0f;
-    public Transform playerCamera;
+    [SerializeField] float mouseSensitivity = 2.0f;
+    [SerializeField] Transform playerCamera;
 
     [Header("Head Bob Settings")]
-    public float bobFrequency = 2.4f;
-    public float bobHorizontalAmplitude = 0.1f;
-    public float bobVerticalAmplitude = 0.12f;
+    [SerializeField] float bobFrequency = 2.4f;
+    [SerializeField] float bobHorizontalAmplitude = 0.1f;
+    [SerializeField] float bobVerticalAmplitude = 0.12f;
 
     [Header("Gravity Settings")]
     public float gravity = -9.81f;
